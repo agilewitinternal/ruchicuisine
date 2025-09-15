@@ -3,14 +3,18 @@ import { MENU_PDF_URL, UBER_EATS_LINK, DOOR_DASH_LINK, DIRECT_ORDER_LINK } from 
 import { FaUber } from 'react-icons/fa';
 import { SiDoordash } from 'react-icons/si';
 import { MdRestaurant } from 'react-icons/md';
-
+import idli from '../assets/idli.jpg';
+import thali from '../assets/thali.jpg';
+import dosa from '../assets/dosa.jpg';
+import vada from '../assets/vada.jpg';
+import rice from '../assets/rice.jpg';
 
 const dosas = [
-    { title: 'Thali', desc: 'A traditional South Indian platter featuring a variety of dishes.', price: '$8.99' },
-    { title: 'Dosas', desc: ' House special dosas, including masala, ragi, and paper dosa.', price: '$10.99' },
-    { title: 'Idlis', desc: 'Soft and fluffy idlis served with sambar and chutney.', price: '$11.99' },
-    { title: 'Vadas', desc: ' Crunchy vadas served with sambar and chutney.', price: '$11.99' },
-    { title: 'Rice Items', desc: 'Varieties of rice dishes, including lemon rice, tamarind rice, and coconut rice.', price: '$11.99' },
+    { imag:thali, title: 'Thali', desc: 'A traditional South Indian platter featuring a variety of dishes.', price: '$8.99' },
+    { imag:dosa, title: 'Dosas', desc: ' House special dosas, including masala, ragi, and paper dosa.', price: '$10.99' },
+    { imag:idli, title: 'Idlis', desc: 'Soft and fluffy idlis served with sambar and chutney.', price: '$11.99' },
+    { imag:vada, title: 'Vadas', desc: ' Crunchy vadas served with sambar and chutney.', price: '$11.99' },
+    { imag:rice, title: 'Rice Items', desc: 'Varieties of rice dishes, including lemon rice, tamarind rice, and coconut rice.', price: '$11.99' },
 ]
 // const tiffins = [
 // { title: 'Idli (2)', desc: 'Steamed rice cakes with sambar & chutney.', price: '$7.49' },
@@ -22,10 +26,10 @@ const dosas = [
 // ]
 
 
-function Card({ it }: { it: { title: string; desc: string; price: string } }) {
+function Card({ it }: { it: { imag:any; title: string; desc: string; price: string } }) {
     return (
         <div className="bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
-            <div className="h-28 bg-ruchiCream rounded mb-3 flex items-center justify-center text-ruchiGreen font-bold">Image</div>
+            <div className="h-28 bg-ruchiCream rounded mb-3 flex items-center justify-center text-ruchiGreen font-bold"><img src={it.imag} alt={it.title} className="h-[100%] w-[100%]" /></div>
             <h3 className="font-semibold">{it.title}</h3>
             <p className="text-sm text-gray-600 mt-1">{it.desc}</p>
             {/* <div className="mt-3 font-bold text-ruchiRed">{it.price}</div> */}

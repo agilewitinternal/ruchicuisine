@@ -2,7 +2,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import MenuHighlights from './components/MenuHighlights'
-import Gallery from './components/Gallery'
+// import Gallery from './components/Gallery'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -15,7 +15,7 @@ return (
 <Hero />
 <About />
 <MenuHighlights />
-<Gallery />
+{/* <Gallery /> */}
 <Contact />
 </main>
 <Footer />

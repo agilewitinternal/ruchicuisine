@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { FaUber } from 'react-icons/fa'
 import { SiDoordash } from 'react-icons/si'
-import { MdRestaurant } from 'react-icons/md'
+import { MdAccessTime, MdRestaurant } from 'react-icons/md'
 import { DIRECT_ORDER_LINK, DOOR_DASH_LINK, UBER_EATS_LINK } from '../config'
 
 
@@ -27,9 +27,9 @@ export default function Header() {
 
     return (
         <header className={`sticky top-0 z-50 bg-white ${scrolled ? 'shadow-header' : ''}`}>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div className="mx-auto mt-[12px] max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                    <img src="/ruchi-logo.jpg" alt="Ruchi logo" className="h-10 w-10" />
+                    <img src="/ruchi-logo.jpg" alt="Ruchi logo" className="h-20 w-20" />
                     <span className="text-xl font-bold text-ruchiRed">Ruchi</span>
                 </div>
                 <nav className="hidden md:flex items-center gap-6">
@@ -65,6 +65,17 @@ export default function Header() {
                     )}
                 </div>
             </div>
+             <div className="w-full">
+                    <div className="flex items-center justify-center gap-2 text-center">
+                        <MdAccessTime className="text-orange-600 hidden xs:block" />
+                        <span className="text-orange-600 font-bold leading-tight text-[11px] sm:text-sm md:text-lg px-2">
+                            Hours: <span className="whitespace-nowrap">Sun–Thu 11am–11pm</span> • <span className="whitespace-nowrap">Fri–Sat 11am–12am</span>
+                        </span>
+                        <span className="text-orange-600 font-bold leading-tight text-[11px] sm:text-sm md:text-lg mb-[10px] px-2">
+                           Delicious Food even at LATE NIGHT
+                        </span>
+                    </div>
+                </div>
         </header>
     )
 }
