@@ -66,7 +66,7 @@ export default function Header() {
                 </div>
             </div>
              <div className="w-full">
-                    <div className="flex items-center justify-center gap-2 text-center">
+                    <div className="flex flex-col items-center justify-center gap-2 text-center">
                         <MdAccessTime className="text-orange-600 hidden xs:block" />
                         <span className="text-orange-600 font-bold leading-tight text-[11px] sm:text-sm md:text-lg px-2">
                             Hours: <span className="whitespace-nowrap">Sun–Thu 11am–11pm</span> • <span className="whitespace-nowrap">Fri–Sat 11am–12am</span>

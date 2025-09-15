@@ -37,7 +37,7 @@ return (
 <li><strong>Phone:</strong> +1 (650) 252-2922</li>
 <li><strong>Email:</strong> info@ruchinashville.com</li>
 <li><strong>Visit Us:</strong> Midtown, Nashville, TN</li>
-<li>Sun–Thu 11am–12am • Fri–Sat 11am–1am</li>
+<li>Sun–Thu 11am–11pm • Fri–Sat 11am–12am</li>
 </ul>
 </div>
 </div>
