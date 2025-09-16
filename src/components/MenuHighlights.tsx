@@ -28,7 +28,7 @@ const dosas = [
 
 function Card({ it }: { it: { imag:any; title: string; desc: string; price: string } }) {
     return (
-        <div className="bg-white rounded-xl shadow p-5 hover:shadow-lg transition">
+        <div className="bg-white rounded-xl shadow w-[70%] mx-auto p-5 hover:shadow-lg transition">
             <div className="h-28 bg-ruchiCream rounded mb-3 flex items-center justify-center text-ruchiGreen font-bold"><img src={it.imag} alt={it.title} className="h-[100%] w-[100%]" /></div>
             <h3 className="font-semibold">{it.title}</h3>
             <p className="text-sm text-gray-600 mt-1">{it.desc}</p>
@@ -81,7 +81,7 @@ export default function MenuHighlights() {
                     </div>
                 </div>
 
-                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
                     {dosas.map(it => (
                         <Card key={it.title} it={it} />
                     ))}
