@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { MENU_PDF_URL, UBER_EATS_LINK, DOOR_DASH_LINK, DIRECT_ORDER_LINK } from '../config'
+import { MENU_PDF_URL, UBER_EATS_LINK, DOOR_DASH_LINK, DIRECT_ORDER_LINK, GRUGHUB_LINK } from '../config'
 import { FaUber } from 'react-icons/fa';
-import { SiDoordash } from 'react-icons/si';
+import { SiDoordash, SiGrubhub } from 'react-icons/si';
 import { MdRestaurant } from 'react-icons/md';
 import idli from '../assets/idli.jpg';
 import thali from '../assets/thali.jpg';
@@ -68,6 +68,9 @@ export default function MenuHighlights() {
                                                     </a>
                                                     <a href={DOOR_DASH_LINK} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                                         <SiDoordash className="text-red-500" /> DoorDash
+                                                    </a>
+                                                    <a href={GRUGHUB_LINK} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                                        <SiGrubhub className="text-red-500" /> GrubHub
                                                     </a>
                                                     <a href={DIRECT_ORDER_LINK} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                                         <MdRestaurant className="text-yellow-600" /> Direct Orders

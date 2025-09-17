@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { FaUber } from 'react-icons/fa'
-import { SiDoordash } from 'react-icons/si'
+import { SiDoordash, SiGrubhub } from 'react-icons/si'
 import { MdAccessTime, MdRestaurant } from 'react-icons/md'
-import { DIRECT_ORDER_LINK, DOOR_DASH_LINK, UBER_EATS_LINK } from '../config'
+import { DIRECT_ORDER_LINK, DOOR_DASH_LINK, GRUGHUB_LINK, UBER_EATS_LINK } from '../config'
 
 
 const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
@@ -57,6 +57,9 @@ export default function Header() {
                             </a>
                             <a href={DOOR_DASH_LINK} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                 <SiDoordash className="text-red-500" /> DoorDash
+                            </a>
+                            <a href={GRUGHUB_LINK} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                <SiGrubhub className="text-red-500" /> GrubHub
                             </a>
                             <a href={DIRECT_ORDER_LINK} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                                 <MdRestaurant className="text-yellow-600" /> Direct Orders

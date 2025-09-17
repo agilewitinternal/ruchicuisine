@@ -1,7 +1,7 @@
 export default function Hero() {
     return (
         <section className="relative" id="home">
-            <img src="/ruchi-banner.jpg" alt="South Indian dishes" className="w-full h-[56vh] md:h-[70vh] object-cover" />
+            <img src="/ruchi-banner.jpg" alt="South Indian dishes" className="w-full h-[56vh] md:h-[70vh]" />
             <div className="absolute inset-0 bg-black/40" />
             <div className="absolute inset-0 flex items-center">
                 <div className="mx-auto max-w-7xl px-6 text-white">
