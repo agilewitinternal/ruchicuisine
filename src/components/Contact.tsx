@@ -18,7 +18,7 @@ export default function Contact() {
                     <div className="mt-4 space-y-1 text-gray-700">
                         <p><strong>Phone:</strong> 615-535-3766</p>
                         <p><strong>Email:</strong> info@ruchinashville.com</p>
-                        <p><strong>Hours:</strong> Sun–Thu 11am–11pm • Fri–Sat 11am–12am</p>
+                        <p><strong>Hours:</strong> Sun–Thu 11am–12am • Fri–Sat 11am–1am</p>
                     </div>
                     <div className="mt-6 flex gap-3 relative">
                         <button

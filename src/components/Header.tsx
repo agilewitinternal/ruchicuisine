@@ -72,10 +72,10 @@ export default function Header() {
                     <div className="flex flex-col items-center justify-center gap-2 text-center">
                         <MdAccessTime className="text-orange-600 hidden xs:block" />
                         <span className="text-orange-600 font-bold leading-tight text-[11px] sm:text-sm md:text-lg px-2">
-                            Hours: <span className="whitespace-nowrap">Sun–Thu 11am–11pm</span> • <span className="whitespace-nowrap">Fri–Sat 11am–12am</span>
+                            Hours: <span className="whitespace-nowrap">Sun–Thu 11am–12am</span> • <span className="whitespace-nowrap">Fri–Sat 11am–1am</span>
                         </span>
                         <span className="text-orange-600 font-bold leading-tight text-[11px] sm:text-sm md:text-lg mb-[10px] px-2">
-                           Delicious Food even at LATE NIGHT
+                           Delicious Food even at LATE NIGHT
                         </span>
                     </div>
                 </div>
